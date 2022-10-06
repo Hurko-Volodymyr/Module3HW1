@@ -2,7 +2,7 @@
 
 namespace Module3HW1
 {
-    internal class CustomList<T> : IEnumerable<T>
+    public class CustomList<T> : IEnumerable<T>
     {
         private const int Capacity = 4;
         private const int UpCapacity = 2;
@@ -20,11 +20,11 @@ namespace Module3HW1
             Count++;
         }
 
-        public void AddRange(Array array)
+        public void AddRange(CustomList<T> list)
         {
-            Array.Resize(ref _array, _array.Length + array.Length);
-            Count += array.Length;
-            array.CopyTo(_array, Count - array.Length);
+            Array.Resize(ref _array, _array.Length + list.Count);
+            Count += list.Count;
+            list.ToArray().CopyTo(_array, Count - list.Count);
         }
 
         public bool Remove(T item)
@@ -67,19 +67,15 @@ namespace Module3HW1
 
         public void Clear()
         {
-            _array = default;
+            _array = new T[Capacity];
         }
 
         public IEnumerator<T> GetEnumerator()
         {
-            try
-            {
-                return (_array as IEnumerable<T>).GetEnumerator();
-            }
-            catch (NullReferenceException)
-            {
-                throw new NullReferenceException("Collection is empty");
-            }
+                foreach (var item in _array)
+                {
+                    yield return item;
+                }
         }
 
         IEnumerator IEnumerable.GetEnumerator()
