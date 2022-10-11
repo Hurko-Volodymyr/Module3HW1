@@ -5,8 +5,6 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module3HW1", "Module3HW1\Module3HW1.csproj", "{F70263B2-D027-490B-B9CB-761EF3E5319E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiPark.Core", "..\..\..\Модуль 2\Module2HW6\Module2HW6\TaxiPark.Core\TaxiPark.Core.csproj", "{AF28800E-01CC-456E-9E62-E5F9809C163C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{F70263B2-D027-490B-B9CB-761EF3E5319E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F70263B2-D027-490B-B9CB-761EF3E5319E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F70263B2-D027-490B-B9CB-761EF3E5319E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AF28800E-01CC-456E-9E62-E5F9809C163C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF28800E-01CC-456E-9E62-E5F9809C163C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF28800E-01CC-456E-9E62-E5F9809C163C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF28800E-01CC-456E-9E62-E5F9809C163C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
